@@ -1,5 +1,6 @@
 import urllib.request, urllib.parse
 from lxml import etree
+import time
 
 # Build Request Header
 headers = {
@@ -80,7 +81,7 @@ def main():
     for i in range(1, 168):
         get_outer(url + str(i))
 
-if __name__ == '__mian__':
+if __name__ == '__main__':
     # main()
     url = 'https://www.mzitu.com/xinggan/page/'
     for i in range(1, 168):
