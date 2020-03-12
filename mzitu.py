@@ -74,7 +74,7 @@ def get_inner(url, file_path):
                     print('图片保存：' , file_os_path)
                     fp.close()
         except Exception as e:
-            print('图片拉去失败')
+            print('图片拉取失败')
 
 def main():
     url = 'https://www.mzitu.com/xinggan/page/'
@@ -86,3 +86,10 @@ if __name__ == '__main__':
     url = 'https://www.mzitu.com/xinggan/page/'
     for i in range(1, 168):
         get_outer(url + str(i))
+
+
+# 笔记：
+# 1. urllib三部曲得到body
+# 2. 从body利用规则的布局，根据正则表达式得到内容
+# 3. 可以通过获取href的方法得到跳转
+# 4. 保存img的方法：fp直接存image文件即可
