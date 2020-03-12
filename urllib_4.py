@@ -24,6 +24,6 @@ from urllib.parse import urlencode
 # urlencode 示例
 dict = {
     "name": "极客挖掘机",
-    "age": 18
+    "age": 1833
 }
 print("https://www.geekdigging.com/" + urlencode(dict))
