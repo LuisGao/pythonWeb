@@ -3,7 +3,7 @@ import time
 from lxml import etree
 import xlwt
 
-# test AuthorName
+# test AuthorName-1
 
 params = {
     'name':'geekdigging',
