@@ -71,17 +71,17 @@ def writeToExcel():
     for i in range(len(TITLES)):
         sheet1.write(i, 0, TITLES[i])
         sheet1.write(i, 1, PRICES[i])
-    workbook.save('F:\\西安二手房交易记录.xls')
+    workbook.save('F:\\北京二手房交易记录.xls')
     print('二手房数据保存完毕')
 
 def main():
 
-    getListPage('https://xa.ke.com/chengjiao/')
+    getListPage('https://bj.ke.com/chengjiao/')
     for i in range(100):
         if i == 0:
             continue
         time.sleep(3)
-        getListPage('https://xa.ke.com/chengjiao/pg' + str(i + 1) + '/')    
+        getListPage('https://bj.ke.com/chengjiao/pg' + str(i + 1) + '/')    
     writeToExcel()
 
 if __name__ == '__main__':
